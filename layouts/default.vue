@@ -8,7 +8,7 @@
             </ul>
         </div>
         <div class="w-10/12 p-10">
-            <h1 class="font-bold text-lg mb-10">Products List</h1>
+            <h1 class="font-bold text-lg mb-10">{{ title }}</h1>
             <slot />
         </div>
     </div>
@@ -32,6 +32,10 @@ export default {
                 },
             ]
         }
+    },
+
+    props: {
+        title: String
     }
 }
 </script>
